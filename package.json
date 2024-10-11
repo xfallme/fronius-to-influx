@@ -1,0 +1,25 @@
+{
+  "name": "fronius-to-influx",
+  "version": "1.0.0",
+  "description": "Simple service that periodically pulls data from a Fronius inverter and publishes it to an InfluxDB instance",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node --env-file=.env src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xfallme/fronius-to-influx.git"
+  },
+  "author": "xfallme",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/xfallme/fronius-to-influx/issues"
+  },
+  "homepage": "https://github.com/xfallme/fronius-to-influx#readme",
+  "dependencies": {
+    "@influxdata/influxdb-client": "^1.35.0",
+    "axios": "^1.7.7",
+    "openapi-client-axios": "^7.5.5"
+  }
+}
